@@ -1,0 +1,158 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.filter{
+    padding: 20px;
+}
+
+.filter__control{
+    width: 180px;
+    color:white;
+    padding: 25px;
+    float: left;
+    background-color: #7280db;
+    box-shadow: 2px 2px 6px 0 rgba(15, 14, 14, 0.6);
+}
+
+#price_slider{
+    margin: 20px 0;
+}
+
+#price_slider__max{
+    float: right;
+}
+
+.filter__control__caption{
+    font-size: 20px;
+}
+
+.controls__textinput{
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.filter__control__search-field{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.filter__control__input-wrapper{
+    margin-top: 20px;
+}
+
+.filter__control__checkbox-container{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.filter__control__checkbox{
+    z-index:1;
+    cursor: pointer;
+}
+
+.checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 30px;
+}
+
+.checkbox:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 22px;
+    height: 12px;
+    border-radius: 13px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.checkbox:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s;
+}
+
+.checkbox:checked + label:before {
+    background: #9FD468;
+}
+
+.checkbox:checked + label:after {
+    left: 10px;
+}
+
+.filter__product-list{
+    margin-left: 260px;
+}
+
+.filter__product-list__product{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.filter__product-list__product__name{
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 56px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.filter__product-list__product__image{
+    display: block;
+    max-width: 140px;
+    max-height: 140px;
+}
+
+.filter__product-list__product__priceblock{
+    position: absolute;
+    width: 110px;
+    height: 80px;
+    right:0;
+    top:60px;
+    text-align: center;
+}
+
+.filter__product-list__product__price{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.filter__product-list__product__sale{
+    display: block;
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: #E91E63;
+}
+
+.filter__product-list__product__stock{
+    display: block;
+    font-size: 12px;
+}
